@@ -1,0 +1,116 @@
+{
+  "project_name": "OBJEX",
+  "brand_identity": {
+    "name": "OBJEX",
+    "tagline": "One Image. One Click. One 3D Model.",
+    "core_concept": "AI-powered tool converting 2D images into interactive 3D models (.glb/.gltf)",
+    "aesthetic": "Futuristic Premium Dark Aesthetic + High-end 3D Creative Suite",
+    "logo_spec": "Hexagonal 3D cube geometric symbol with purple/violet/blue gradient, wordmark OBJEX with X highlighted in purple->blue->cyan gradient"
+  },
+  "typography": {
+    "heading_font": "Plus Jakarta Sans, sans-serif",
+    "display_font": "Outfit, sans-serif",
+    "body_font": "Plus Jakarta Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "font_family_imports": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap",
+    "anti_slop_rules": "DO NOT use Inter for main headings. Rotate between Outfit for high-impact display titles and JetBrains Mono for HUD tech metrics.",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_subsection": "text-xl sm:text-2xl font-semibold tracking-normal",
+      "h4_card": "text-lg sm:text-xl font-medium",
+      "body": "text-sm sm:text-base leading-relaxed text-slate-300",
+      "mono_label": "font-mono text-xs uppercase tracking-[0.2em] text-cyan-400"
+    }
+  },
+  "colors": {
+    "theme_mode": "dark",
+    "backgrounds": {
+      "primary": "#050507",
+      "secondary": "#0A0A0F",
+      "tertiary": "#111118"
+    },
+    "surfaces": {
+      "card_surface": "#171720",
+      "card_surface_hover": "#252532",
+      "panel_border": "rgba(255, 255, 255, 0.08)",
+      "panel_glow_border": "rgba(168, 85, 247, 0.25)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#C8C9D3",
+      "muted": "#7A7C93",
+      "accent_text": "#E0A7FF"
+    },
+    "accent_palette": {
+      "purple": "#A855F7",
+      "magenta": "#EC4899",
+      "violet": "#7C3AED",
+      "electric_blue": "#3B82F6",
+      "cyan": "#06B6D4"
+    },
+    "gradients": {
+      "primary_brand": "linear-gradient(135deg, #EC4899 0%, #A855F7 25%, #7C3AED 50%, #3B82F6 75%, #06B6D4 100%)",
+      "text_gradient": "bg-gradient-to-r from-magenta via-purple through-violet to-cyan bg-clip-text text-transparent",
+      "cyan_blue_accent": "linear-gradient(90deg, #3B82F6 0%, #06B6D4 100%)",
+      "radial_hero_glow": "radial-gradient(circle at 50% 30%, rgba(168, 85, 247, 0.18) 0%, rgba(6, 182, 212, 0.08) 45%, rgba(5, 5, 7, 0) 70%)"
+    },
+    "forbidden_colors": [
+      "#7351B7",
+      "#1B93A4",
+      "pure black #000000 without blue/violet tint"
+    ]
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-2xl bg-[#0A0A0F]/80 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "cyber_grid_background": "background-image: radial-gradient(rgba(168, 85, 247, 0.15) 1px, transparent 1px); background-size: 32px 32px;",
+    "tracing_beam": "1px animated gradient border using linear-gradient hover state with blur-md background glow",
+    "noise_texture": "subtle SVG grain overlay at 3% opacity across major sections to prevent flat digital rendering",
+    "custom_cursor": "magnetic ring cursor with magenta-cyan particle lag effect on interactive 3D elements and buttons"
+  },
+  "layout_and_grids": {
+    "spacing_scale": "p-4, p-6, p-8, p-12, p-16, p-20, p-24, p-32",
+    "bento_mode": "Tetris Grid Mode A with asymmetric 12-column span ratios (Hero: col-span-12 lg:col-span-8, Sidebar/Interactive: col-span-12 lg:col-span-4)",
+    "container_padding": "px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto",
+    "card_padding_rule": "Every container with a border MUST have internal padding p-6 or p-8 to prevent text collision"
+  },
+  "routes_and_pages": {
+    "/": "Cinematic Landing Page featuring R3F interactive hero 3D cube/model, live dropzone preview, 2D->3D slider transformation storytelling, feature grid, testimonial carousel, and quick generator bar.",
+    "/create": "Interactive Web Application Tool - Image upload drag-and-drop, high-tech AI processing workflow (wireframe scan, depth map, point cloud, mesh generation, texture bake), live 3D GLB viewer canvas with orbit controls, mesh inspector, lighting controls, wireframe toggle, background swapper, and instant GLB/OBJ download.",
+    "/how-it-works": "Step-by-step interactive scroll storytelling section (2D RGB Image -> AI Neural Depth Estimation -> Volumetric NeRF/Gaussian Splat -> 3D Mesh & Texture Extraction) with animated code snippets, interactive node diagrams, and live side-by-side comparison.",
+    "/gallery": "Filterable 3D Model Showcase Grid (Categories: Sci-Fi, Props, Characters, Architecture, Industrial) with real-time interactive 3D thumbnail previews, mesh polycount badges, and instant 'Remix/Load into Generator' actions.",
+    "/use-cases": "Industry solutions showcase (Game Development, E-Commerce, AR/VR, Industrial Design, Metaverse) with interactive 3D product previews and ROI metrics.",
+    "/pricing": "Tiered pricing cards (Free Creator, Pro 3D Artist, Studio/Enterprise) with glowing gradient border for highlighted Pro plan, feature matrices, and token counter calculator.",
+    "/faq": "Interactive accordion with category filtering (Generation Speed, Export Formats, Commercial Rights, Mesh Quality) and interactive search bar."
+  },
+  "3d_libraries_and_strategy": {
+    "three_js_stack": "@react-three/fiber, @react-three/drei, three",
+    "hero_scene": "Floating interactive OBJEX hexagonal 3D cube with glass material, inner glowing core, wireframe orbit rings, interactive hover mouse response, and ambient float dynamics",
+    "model_viewer": "R3F OrbitControls canvas with ambient lighting, directional spotlights, shadows, wireframe toggle button, background grid toggle, zoom/pan/reset controls, auto-rotate switch, and camera view presets (Front, Top, Iso, Perspective)",
+    "lighting_presets": "Studio Neon (Magenta/Cyan lights), Cyberpunk High-Contrast, Clean Sunlight, Soft Studio Ambient",
+    "fallback_strategy": "When customized user models generate, use procedural 3D geometric meshes (Dodecahedron, TorusKnot, Icosahedron, Cybernetic Helmets/Cubes) with custom shaders & glowing wireframe overlays, or sample .glb models"
+  },
+  "image_urls": {
+    "hero_3d_render_cubes": "https://images.unsplash.com/photo-1671519821564-ced7e41ee7ae?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "hero_geometric_structure": "https://images.unsplash.com/photo-1756042439098-b04de459f3ad?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "gallery_3d_cyber_core": "https://images.unsplash.com/photo-1658487476847-a180f98870d0?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "gallery_3d_spiral_mesh": "https://images.unsplash.com/photo-1627645835237-0743e52b991f?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "sample_input_images": [
+      "https://images.unsplash.com/photo-1622737133809-d95047b9e673?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1645186296371-0b4efad96bdd?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ]
+  },
+  "motion_and_interactions": {
+    "framer_motion": "All page transitions, staggered grid fade-ins, accordion expansions, and processing state progress bars must use framer-motion",
+    "hover_states": "Interactive elements must show slight elevation (-translate-y-1), border color shift to purple/cyan, and subtle radial background glow",
+    "focus_states": "Focus ring must use focus:ring-2 focus:ring-cyan-400 focus:outline-none",
+    "micro_interactions": "Button press active:scale-95, toggle switch smooth spring dynamics, toast notifications using sonner with cyber dark styling"
+  },
+  "general_ui_ux_guidelines": {
+    "data_testid_requirement": "EVERY interactive element (buttons, tabs, inputs, links, route triggers, 3D viewport controls, sliders) MUST have a unique kebab-case data-testid attribute (e.g., data-testid='upload-image-dropzone', data-testid='generate-3d-button', data-testid='view-wireframe-toggle', data-testid='download-glb-button')",
+    "header_nav": "Fixed top bar with glassmorphism (backdrop-blur-xl bg-[#050507]/80), hexagonal gradient logo symbol + OBJEX text, route links (/how-it-works, /gallery, /use-cases, /pricing, /faq), and primary CTA button 'Start Creating' linking to /create. NEVER make header fully transparent without blur/scrim.",
+    "footer": "Deep dark surface (#0A0A0F), high-impact giant OBJEX glowing text (text-6xl sm:text-8xl), social links, technology stack badges, and newsletter subscription form.",
+    "accessibility": "Ensure high contrast on dark surfaces (white/silver text over #050507/#171720), explicit hover text colors, aria-labels for icon-only 3D controls, and keyboard navigation support.",
+    "file_extension": "Target React implementation uses JavaScript (.js / .jsx) components. Ensure imports match react-router-dom v7 and installed icons."
+  }
+}
