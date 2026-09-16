@@ -21,8 +21,8 @@ export async function generate3DModel(file, onProgress = () => {}) {
     try {
       onProgress(5, "Uploading");
       const fd = new FormData();
-      fd.append("image", file);
-      const res = await fetch(`${REAL_API_URL}/generate`, {
+      fd.append("file", file);
+      const res = await fetch(`${REAL_API_URL}/api/generate`, {
         method: "POST",
         body: fd,
       });
@@ -34,7 +34,7 @@ export async function generate3DModel(file, onProgress = () => {}) {
       }
       const data = await res.json();
       onProgress(100);
-      return { url: data.url || DEMO_MODEL_URL, meta: data, demo: false };
+      return { url: data.model_url || DEMO_MODEL_URL, meta: data, demo: false };
     } catch (e) {
       // fall through to demo
       console.warn("Real API failed, falling back to demo:", e.message);
